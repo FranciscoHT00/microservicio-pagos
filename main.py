@@ -78,6 +78,3 @@ async def detalles_compra(id_compra: int, db: db_dependency):
         raise HTTPException(status_code=404, detail="Compra no registrada.")
     return items
 
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", port=8001, reload=True)
